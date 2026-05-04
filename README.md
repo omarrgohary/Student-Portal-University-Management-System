@@ -62,22 +62,19 @@ The application ensures data integrity, secure workflows, and clear separation o
 
 ## Grading Workflow
 
-```text
-Instructor assigns grades
-        ↓
-Student views marks
-        ↓
-Admin reviews grades
-        ↓
-Admin confirms grades
-        ↓
-Student views final grade
-
+Instructor assigns grades  
+↓  
+Student views marks  
+↓  
+Admin reviews grades  
+↓  
+Admin confirms grades  
+↓  
+Student views final grade  
 
 If grades are updated:
 
 Grades updated → Confirmation reset → Student sees "Pending"
-
 
 ---
 
