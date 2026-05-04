@@ -87,7 +87,6 @@ Grades updated → Confirmation reset → Student sees "Pending"
 
 ---
 
-```markdown
 ## Project Structure
 
 ```text
