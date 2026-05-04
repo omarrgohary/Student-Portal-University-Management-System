@@ -25,10 +25,32 @@ namespace Web_Eng.Helpers
                 new Claim(ClaimTypes.Role, user.Role)
             };
 
-            var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
+            return GenerateJwt(claims);
+        }
 
-            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+        public string GenerateTokenForStudent(Student student)
+        {
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, student.Id.ToString()),
+                new Claim(ClaimTypes.Name, student.Name),
+                new Claim(ClaimTypes.Email, student.Email),
+                new Claim(ClaimTypes.Role, "Student")
+            };
+
+            return GenerateJwt(claims);
+        }
+
+        private string GenerateJwt(Claim[] claims)
+        {
+            var key = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!)
+            );
+
+            var credentials = new SigningCredentials(
+                key,
+                SecurityAlgorithms.HmacSha256
+            );
 
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],

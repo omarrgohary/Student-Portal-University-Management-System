@@ -4,7 +4,6 @@ using Web_Eng.DTOs.Student;
 using Web_Eng.Models;
 using Web_Eng.Services.Interfaces;
 
-
 namespace Web_Eng.Services
 {
     public class StudentService : IStudentService
@@ -51,7 +50,8 @@ namespace Web_Eng.Services
             {
                 Name = dto.Name,
                 Email = dto.Email,
-                Age = dto.Age
+                Age = dto.Age,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password)
             };
 
             _context.Students.Add(student);

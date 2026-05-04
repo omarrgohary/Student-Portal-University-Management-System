@@ -63,6 +63,24 @@ namespace Web_Eng.Migrations
                     b.Property<DateTime>("EnrolledAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<int?>("Final")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Grade")
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("IsGradeConfirmed")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int?>("Prefinal")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Seventh")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Twelfth")
+                        .HasColumnType("int");
+
                     b.HasKey("StudentId", "CourseId");
 
                     b.HasIndex("CourseId");
@@ -118,6 +136,10 @@ namespace Web_Eng.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 

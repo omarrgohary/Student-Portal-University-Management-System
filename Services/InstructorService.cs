@@ -4,7 +4,6 @@ using Web_Eng.DTOs.Instructor;
 using Web_Eng.Models;
 using Web_Eng.Services.Interfaces;
 
-
 namespace Web_Eng.Services
 {
     public class InstructorService : IInstructorService
@@ -60,17 +59,16 @@ namespace Web_Eng.Services
                 Role = "Instructor"
             };
 
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
             var profile = new InstructorProfile
             {
-                UserId = user.Id,
+                User = user,
                 OfficeLocation = dto.OfficeLocation,
                 Bio = dto.Bio
             };
 
+            _context.Users.Add(user);
             _context.InstructorProfiles.Add(profile);
+
             await _context.SaveChangesAsync();
 
             return new InstructorReadDto
@@ -79,7 +77,8 @@ namespace Web_Eng.Services
                 FullName = user.FullName,
                 Email = user.Email,
                 OfficeLocation = profile.OfficeLocation,
-                Bio = profile.Bio
+                Bio = profile.Bio,
+
             };
         }
 
@@ -89,7 +88,8 @@ namespace Web_Eng.Services
                 .Include(u => u.InstructorProfile)
                 .FirstOrDefaultAsync(u => u.Id == id && u.Role == "Instructor");
 
-            if (user == null) return false;
+            if (user == null)
+                return false;
 
             user.FullName = dto.FullName;
             user.Email = dto.Email;
@@ -106,7 +106,8 @@ namespace Web_Eng.Services
                 .Include(u => u.InstructorProfile)
                 .FirstOrDefaultAsync(u => u.Id == id && u.Role == "Instructor");
 
-            if (user == null) return false;
+            if (user == null)
+                return false;
 
             if (user.InstructorProfile != null)
                 _context.InstructorProfiles.Remove(user.InstructorProfile);

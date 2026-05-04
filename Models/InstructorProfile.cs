@@ -13,6 +13,7 @@ namespace Web_Eng.Models
         [MaxLength(500)]
         public string? Bio { get; set; }
 
+
         public int UserId { get; set; }
         public User User { get; set; } = null!;
     }

@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Web_Eng.Models;
 
 namespace Web_Eng.Models
 {
@@ -17,6 +16,9 @@ namespace Web_Eng.Models
         public string Email { get; set; } = string.Empty;
 
         public int Age { get; set; }
+
+        [Required]
+        public string PasswordHash { get; set; } = string.Empty;
 
         public List<Enrollment> Enrollments { get; set; } = new();
     }

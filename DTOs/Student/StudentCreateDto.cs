@@ -16,5 +16,9 @@ namespace Web_Eng.DTOs.Student
 
         [Range(16, 100)]
         public int Age { get; set; }
+
+        [Required]
+        [MinLength(6)]
+        public string Password { get; set; } = string.Empty;
     }
 }
