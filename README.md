@@ -226,7 +226,7 @@ Enrollments
 ---
 
 ## Author
-Omar El Gohary
+Omar El Gohary | Linkedinhttps://linkedin.com/in/omarelgohary2003/ | omarrmgohary@gmail.com
 
 ---
 
