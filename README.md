@@ -160,10 +160,20 @@ npm run dev
 
 ## Screenshots
 
+Login 
+
 <img width="1912" height="842" alt="image" src="https://github.com/user-attachments/assets/fc5c4c68-141f-49a8-9d21-701fa4d554c2" />
 <img width="1917" height="730" alt="image" src="https://github.com/user-attachments/assets/e1f08de1-1ba5-43f3-bc7f-234de8ad6646" />
 <img width="1918" height="695" alt="image" src="https://github.com/user-attachments/assets/05a5ed64-e219-4b63-820d-9c872f221f06" />
 
+---
+
+Dashboards
+<img width="1892" height="903" alt="image" src="https://github.com/user-attachments/assets/4e14b680-a386-4cfe-b6b3-381d46120ce8" />
+<img width="1896" height="898" alt="image" src="https://github.com/user-attachments/assets/6c6f6311-04b0-48db-b070-10566ccebc87" />
+<img width="1897" height="897" alt="image" src="https://github.com/user-attachments/assets/78e5aa8c-a939-463d-8ecf-990fc22723b3" />
+
+---
 
 
 
