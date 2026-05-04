@@ -128,11 +128,17 @@ npm run dev
 --
 
 API Endpoints
+
+--
+
 Authentication
 Method	Endpoint	Description
 POST	/api/Auth/login	Admin login
 POST	/api/Auth/student-login	Student login
 POST	/api/Auth/instructor-login	Instructor login
+
+--
+
 Enrollments
 Method	Endpoint	Description
 GET	/api/Enrollments	Get all enrollments
@@ -140,6 +146,9 @@ GET	/api/Enrollments/my-courses	Get user courses
 PUT	/api/Enrollments/update-grades	Update grades
 PUT	/api/Enrollments/confirm-course	Confirm course grades
 DELETE	/api/Enrollments/{studentId}/{courseId}	Delete enrollment
+
+--
+
 Key Features
 Role-based access control
 Structured grading workflow
