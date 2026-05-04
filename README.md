@@ -74,6 +74,11 @@ Admin confirms grades
 Student views final grade
 
 
+If grades are updated:
+
+Grades updated → Confirmation reset → Student sees "Pending"
+
+
 ---
 
 ## Security Features
