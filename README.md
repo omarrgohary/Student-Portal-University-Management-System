@@ -190,19 +190,33 @@ Student Profile
 
 ---
 
+Instructor's Courses
+<img width="1918" height="787" alt="image" src="https://github.com/user-attachments/assets/ffda3bc5-145d-47ab-9171-b23d40834fb9" />
 
+---
 
+Students enrolled in assigned courses
+<img width="1898" height="897" alt="image" src="https://github.com/user-attachments/assets/550a8144-b64e-469e-ba85-3df3f47716e1" />
 
+---
 
+Display all students for admin
+<img width="1908" height="873" alt="image" src="https://github.com/user-attachments/assets/57203170-4781-4951-b472-fb6b01854025" />
 
-### List Page
-![List](screenshots/list.png)
+---
 
-### Create Page
-![Create](screenshots/create.png)
+Display all instructors for admin
+<img width="1903" height="877" alt="image" src="https://github.com/user-attachments/assets/9fae0742-bcae-40d9-9b9a-2c4750916356" />
 
-### Details Page
-![Details](screenshots/details.png)
+---
+
+Display all courses for admin with admin confirmation for the final grades
+<img width="1882" height="895" alt="image" src="https://github.com/user-attachments/assets/139ff878-d362-4608-b359-c4d09230252f" />
+
+---
+
+Enrollments
+<img width="1900" height="880" alt="image" src="https://github.com/user-attachments/assets/9f9a051e-4616-4a3f-9bc0-6fad79f99953" />
 
 ---
 
