@@ -1,7 +1,10 @@
 # University Management System (Full-Stack)
 
+---
+
 ## Description
-A full-stack web application designed to manage students, instructors, courses, and enrollments with a role-based workflow for grading and approval.
+
+A full-stack web application designed to manage students, instructors, courses, and enrollments. The system implements a role-based workflow for grading, review, and approval.
 
 ---
 
@@ -9,64 +12,66 @@ A full-stack web application designed to manage students, instructors, courses, 
 
 ---
 
-
 ## Overview
+
 This system simulates a real-world academic environment where:
 
-- Instructors assign grades  
-- Admins review and confirm final grades  
-- Students view their results with controlled visibility  
+- Instructors assign grades
+- Admins review and confirm final grades
+- Students view their results with controlled visibility
 
 The application ensures data integrity, secure workflows, and clear separation of responsibilities.
-
----
 
 ## Tech Stack
 
 ### Backend
-- ASP.NET Core Web API  
-- Entity Framework Core  
-- MySQL  
-- JWT Authentication  
-- Role-Based Authorization  
+
+- ASP.NET Core Web API
+- Entity Framework Core
+- MySQL
+- JWT Authentication
+- Role-Based Authorization
 
 ### Frontend
-- React.js (Vite)  
-- Axios for API integration  
-- Component-based UI architecture  
 
----
+- React.js with Vite
+- Axios for API integration
+- Component-based UI architecture
 
 ## User Roles and Features
 
 ### Admin
-- Manage students, instructors, courses, and enrollments  
-- View all enrollments grouped by course  
-- Confirm final grades  
-- Delete enrollments  
+
+- Manage students, instructors, courses, and enrollments
+- View all enrollments grouped by course
+- Confirm final grades
+- Delete enrollments
 
 ### Instructor
-- View assigned courses  
-- View enrolled students  
-- Assign grades (7th, 12th, Prefinal, Final, Final Grade)  
-- Updating grades resets admin confirmation  
+
+- View assigned courses
+- View enrolled students
+- Assign grades: 7th, 12th, Prefinal, Final, and Final Grade
+- Updating grades resets admin confirmation
 
 ### Student
-- View enrolled courses  
-- View marks at all times  
-- View final grade only after admin confirmation  
 
----
+- View enrolled courses
+- View marks at all times
+- View final grade only after admin confirmation
 
 ## Grading Workflow
 
-
-Instructor assigns grades → Student sees marks → Admin reviews → Admin confirms → Student sees final grade
-
-
-If grades are updated:
-
-Grades updated → Confirmation reset → Student sees "Pending"
+```text
+Instructor assigns grades
+        ↓
+Student views marks
+        ↓
+Admin reviews grades
+        ↓
+Admin confirms grades
+        ↓
+Student views final grade
 
 
 ---
