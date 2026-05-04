@@ -89,18 +89,17 @@ Grades updated → Confirmation reset → Student sees "Pending"
 
 ## Project Structure
 
-
 Backend/
-Controllers/
-Services/
-Models/
-DTOs/
-Data/
+├── Controllers/
+├── Services/
+├── Models/
+├── DTOs/
+└── Data/
 
 Frontend/
-pages/
-components/
-services/
+├── pages/
+├── components/
+└── services/
 
 
 ---
