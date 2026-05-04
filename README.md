@@ -104,8 +104,11 @@ services/
 Run:
 
 cd Backend
+
 dotnet restore
+
 dotnet ef database update
+
 dotnet run
 
 
@@ -113,7 +116,9 @@ dotnet run
 Run:
 
 cd Frontend
+
 npm install
+
 npm run dev
 
 
