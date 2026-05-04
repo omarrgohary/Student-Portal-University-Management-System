@@ -117,10 +117,16 @@ cd Backend
 dotnet restore
 dotnet ef database update
 dotnet run
+
+--
+
 Frontend
 cd Frontend
 npm install
 npm run dev
+
+--
+
 Authentication Endpoints
 Method	Endpoint	Description
 POST	/api/Auth/login	Admin login
@@ -145,6 +151,7 @@ Transcript export (PDF)
 Notification system
 Audit logging for grade changes
 Pagination and filtering
+
 Author
 
 Omar El Gohary
