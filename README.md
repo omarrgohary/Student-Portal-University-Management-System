@@ -109,25 +109,26 @@ Frontend/
 ## Setup Instructions
 
 ### Backend
+
 Run:
 
+```bash
 cd Backend
-
 dotnet restore
-
 dotnet ef database update
-
 dotnet run
+```
 
 
 ### Frontend
+
 Run:
 
+```bash
 cd Frontend
-
 npm install
-
 npm run dev
+```
 
 
 ---
