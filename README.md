@@ -4,7 +4,7 @@
 
 ## Description
 
-A full-stack web application designed to manage students, instructors, courses, and enrollments. The system implements a role-based workflow for grading, review, and approval.
+Full-stack University Management System built with ASP.NET Core and React, featuring role-based access (Admin, Instructor, Student) and a secure grading workflow where instructors assign detailed marks and final grades are only visible to students after admin confirmation, ensuring data integrity and controlled access.
 
 ---
 
