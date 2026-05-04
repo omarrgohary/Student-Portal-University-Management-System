@@ -127,35 +127,34 @@ npm run dev
 
 --
 
-Authentication Endpoints
+API Endpoints
+Authentication
 Method	Endpoint	Description
 POST	/api/Auth/login	Admin login
 POST	/api/Auth/student-login	Student login
 POST	/api/Auth/instructor-login	Instructor login
-Key API Endpoints
 Enrollments
 Method	Endpoint	Description
 GET	/api/Enrollments	Get all enrollments
-GET	/api/Enrollments/my-courses	Get courses for current user
+GET	/api/Enrollments/my-courses	Get user courses
 PUT	/api/Enrollments/update-grades	Update grades
 PUT	/api/Enrollments/confirm-course	Confirm course grades
 DELETE	/api/Enrollments/{studentId}/{courseId}	Delete enrollment
-Highlights
-Clear separation of roles
-Real-world grading workflow
-Consistent data handling
-Scalable and maintainable architecture
-Future Improvements
+Key Features
+Role-based access control
+Structured grading workflow
+Dynamic data updates across roles
+Scalable architecture
+Future Enhancements
 GPA calculation
 Transcript export (PDF)
 Notification system
-Audit logging for grade changes
+Audit logging
 Pagination and filtering
-
 Author
 
 Omar El Gohary
 
 License
 
-This project is for educational purposes.
+This project is intended for educational purposes.
