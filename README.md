@@ -175,6 +175,24 @@ Dashboards
 
 ---
 
+Student Results
+<img width="1907" height="742" alt="image" src="https://github.com/user-attachments/assets/18128ce6-0b91-4530-9881-366ca44ac9fc" />
+
+---
+
+Available Courses for students
+<img width="1893" height="880" alt="image" src="https://github.com/user-attachments/assets/52bf0170-212c-401c-9385-bcbb542e6e1c" />
+
+---
+
+Student Profile
+<img width="1913" height="813" alt="image" src="https://github.com/user-attachments/assets/1850b8fa-2e1f-4e6e-8371-1def6e8f6f70" />
+
+---
+
+
+
+
 
 
 ### List Page
