@@ -89,6 +89,7 @@ Grades updated → Confirmation reset → Student sees "Pending"
 
 ## Project Structure
 
+```text
 Backend/
 ├── Controllers/
 ├── Services/
