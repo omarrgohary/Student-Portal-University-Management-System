@@ -5,6 +5,11 @@ A full-stack web application designed to manage students, instructors, courses, 
 
 ---
 
+<img width="1902" height="895" alt="image" src="https://github.com/user-attachments/assets/c4df2498-f1b4-4061-a204-0d7839c9a42a" />
+
+---
+
+
 ## Overview
 This system simulates a real-world academic environment where:
 
@@ -119,21 +124,48 @@ npm run dev
 ### Authentication
 - POST /api/Auth/login  
 - POST /api/Auth/student-login  
-- POST /api/Auth/instructor-login  
+- POST /api/Auth/instructor-login
+- POST /api/Auth/logout
 
 ### Enrollments
 - GET /api/Enrollments  
 - GET /api/Enrollments/my-courses  
 - PUT /api/Enrollments/update-grades  
 - PUT /api/Enrollments/confirm-course  
-- DELETE /api/Enrollments/{studentId}/{courseId}  
+- DELETE /api/Enrollments/{studentId}/{courseId}
+
+### Instructors
+- GET /api/Instructors/me  
+- GET /api/Instructors/my-courses  
+- GET /api/Instructors/my-students  
+- POST /api/Instructors
+
+### Courses
+- GET /api/Courses 
+- POST /api/Courses 
+- GET /api/Courses/{id}  
+- PUT  /api/Courses/{id}
+- DELETE /api/Courses/{id}
+
+### Students
+- GET /api/Students/me 
+- PUT /api/Students/me 
+- GET /api/Students  
+- POST /api/Students
+- GET /api/Students/{id}
+- PUT /api/Students/{id}
+- DELETE /api/Students/{id}
 
 ---
 
 ## Screenshots
 
-### Home Page
-![Home](screenshots/home.png)
+<img width="1912" height="842" alt="image" src="https://github.com/user-attachments/assets/fc5c4c68-141f-49a8-9d21-701fa4d554c2" />
+<img width="1917" height="730" alt="image" src="https://github.com/user-attachments/assets/e1f08de1-1ba5-43f3-bc7f-234de8ad6646" />
+<img width="1918" height="695" alt="image" src="https://github.com/user-attachments/assets/05a5ed64-e219-4b63-820d-9c872f221f06" />
+
+
+
 
 ### List Page
 ![List](screenshots/list.png)
